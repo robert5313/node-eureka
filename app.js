@@ -10,7 +10,7 @@ const orderRoutes = require("./api/routes/order");
 
 mongoose.connect(process.env.MONGO_DB_URL,
 );
-console.log(process.env.MONGO_DB_URL)
+
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
